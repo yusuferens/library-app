@@ -1,0 +1,42 @@
+body{
+    
+    margin: 0;
+    font-size: 18px;
+    
+    
+}
+
+.contents{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "content"
+    "footer";
+    height: 100vh;
+    grid-template-rows: 100px 1fr 100px;
+    
+}
+
+.header-container{
+    background-color:#607274;
+    font-size: 24px;
+    padding-top: 1.5em;
+    font-weight: 600;
+    height: 30vh;
+}
+
+
+.yourbooks-container{
+    background-color: #DED0B6;
+    padding-top: 1.5em;
+    
+}
+
+.footer-container{
+    background-color: #B2A59B;
+    font-size: 24px;
+    padding-top: 1.5em;
+    
+
+}
+

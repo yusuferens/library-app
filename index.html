@@ -8,20 +8,46 @@
     <script src="index.js"></script>
   </head>
   <body>
+    <div class="contents">
+        
+    
     <!-- header goes here -->
     <div class="header-container">
-        <img src="" alt="" >
+        <div src="icons/library-book-svgrepo-com.svg" alt="" srcset="">
         <p class="headline">LibraryJS</p>
-        <p class="greetings">Welcome</p>
-
+      </div>
     </div>
+    
+            
+    </img.s>
     <!-- Content and add book goes here -->
-    <p class="yourbooks">Your Books</p>
-    <button type="button">Add a new book</button>
+    <div class="yourbooks-container">
+        <p class="yourbooks">Your Books</p>
+        <button data-open-modal="addbook">Add a book</button>
+        <dialog>
+          <form>
+            Title : <input type="text" name ="title"/>
+            Author: <input type="text" name="author"/>
+            Pages: <input type="number" name="year"/>
+            <button data-close-modal type="button">Close</button>
+          </form>
+        
+          
+        </dialog>
+
+        <div class="bookscontainer">
+          <dialog data-addbook>
+            
+          </dialog>
+            
+        </div>
+    </div>
+    
 
     <!-- footer goes here -->
     <div class="footer-container">
         <p>yusuferens 2024</p>
     </div>
+</div>
   </body>
 </html>
