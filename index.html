@@ -5,7 +5,7 @@
     <title>Library App</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
-    <script src="index.js"></script>
+    
   </head>
   <body>
     <div class="contents">
@@ -22,23 +22,20 @@
     </img.s>
     <!-- Content and add book goes here -->
     <div class="yourbooks-container">
-        <p class="yourbooks">Your Books</p>
-        <button data-open-modal="addbook">Add a book</button>
-        <dialog>
-          <form>
-            Title : <input type="text" name ="title"/>
-            Author: <input type="text" name="author"/>
-            Pages: <input type="number" name="year"/>
-            <button data-close-modal type="button">Close</button>
+      <p class="yourbooks">Your Books</p>
+      <button id="openModalBtn">Add a book</button>
+      <dialog id="addBookModal">
+          <form id="addBookForm">
+              Title: <input type="text" name="title" />
+              Author: <input type="text" name="author" />
+              Pages: <input type="number" name="pages" />
+              <button type="button" id="closeModalBtn">Close</button>
+              <button type="button" id="submitBookBtn">Submit</button>
           </form>
-        
-          
-        </dialog>
-
+      </dialog>
+  </div>
         <div class="bookscontainer">
-          <dialog data-addbook>
-            
-          </dialog>
+          
             
         </div>
     </div>
@@ -49,5 +46,6 @@
         <p>yusuferens 2024</p>
     </div>
 </div>
+<script src="index.js"></script>
   </body>
 </html>
