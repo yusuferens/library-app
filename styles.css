@@ -13,30 +13,106 @@ body{
     "content"
     "footer";
     height: 100vh;
-    grid-template-rows: 100px 1fr 100px;
-    
+    grid-template-rows: 10% 80% 10%;
+    flex-direction: column;
 }
 
 .header-container{
-    background-color:#607274;
+    display: flex;
+    background-color:#6e797a;
     font-size: 24px;
-    padding-top: 1.5em;
+    padding: 1.5em;
     font-weight: 600;
-    height: 30vh;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+    
+
 }
 
+.header-container img{
+    width: fit-content;
+    height: fit-content;
+    
+    
+}
 
+#addBookForm{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
 .yourbooks-container{
     background-color: #DED0B6;
     padding-top: 1.5em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 50vh;
+
+    
+    
+    
+
     
 }
 
+.yourbooks-container .yourbooks{
+    font-size: 24px;
+    font-weight: 600;
+    padding-bottom: 24px;
+}
+
+#openModalBtn{
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #6e797a;
+    color: white;
+    height: 10vh;
+    width: 10vh;
+    font-size: 24px;
+}
+
 .footer-container{
-    background-color: #B2A59B;
+    background-color: #6e797a;
     font-size: 24px;
     padding-top: 1.5em;
-    
+    display: flex;
+    justify-content: center;
 
+}
+
+.cardscontainer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    
+    
+}
+.card{
+    background-color: #6e797a;
+    font-size: 18px;
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+  
+    border-radius: 10px;
+}
+.deleteBtn{
+    background: url(icons/trashcan-svgrepo-com.svg);
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    
+    margin-top: 10px;
 }
 

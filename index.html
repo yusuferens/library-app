@@ -13,17 +13,26 @@
     
     <!-- header goes here -->
     <div class="header-container">
-        <div src="icons/library-book-svgrepo-com.svg" alt="" srcset="">
+        <img src="icons/library-book-svgrepo-com.svg" alt="" >
         <p class="headline">LibraryJS</p>
-      </div>
     </div>
     
             
-    </img.s>
+    
     <!-- Content and add book goes here -->
     <div class="yourbooks-container">
       <p class="yourbooks">Your Books</p>
       <button id="openModalBtn">Add a book</button>
+      <div class="cardscontainer">
+        <div class="card">
+          <h2>Title</h2>
+          <h2>Author</h2>
+          <h2>Pages</h2>
+          <button id="deleteBtn"></button>
+      
+          
+          </div>
+        </div>
       <dialog id="addBookModal">
           <form id="addBookForm">
               Title: <input type="text" name="title" />
@@ -33,19 +42,16 @@
               <button type="button" id="submitBookBtn">Submit</button>
           </form>
       </dialog>
-  </div>
-        <div class="bookscontainer">
-          
-            
-        </div>
     </div>
-    
 
-    <!-- footer goes here -->
+            <!-- footer goes here -->
+
     <div class="footer-container">
-        <p>yusuferens 2024</p>
+          <p>yusuferens 2024</p>
+      </div>
     </div>
-</div>
+  
+
 <script src="index.js"></script>
-  </body>
+  
 </html>
